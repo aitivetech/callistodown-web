@@ -1,0 +1,16 @@
+<!doctype html>
+<!-- Share card template: rendered to img/og-share.jpg at 1200 x 630 (see README, "Images"). -->
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;800&family=IBM+Plex+Mono:wght@500&display=block">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; background: #000; overflow: hidden; }
+  .card { position: relative; width: 1200px; height: 630px; background: #000 url(../img/jupiter-rise-1920.webp) 200px 30px / 1500px auto no-repeat; }
+  .card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,7,11,0) 60%, rgba(5,7,11,.55) 100%); }
+  .t { position: absolute; left: 64px; top: 92px; font-family: "Big Shoulders Display"; text-transform: uppercase; line-height: .8; }
+  .a { display: block; font-weight: 800; font-size: 168px; color: #dff3fb; }
+  .b { display: block; font-weight: 500; font-size: 66px; letter-spacing: .42em; color: #e9a35a; margin-top: 18px; }
+  .s { position: absolute; left: 66px; top: 380px; margin: 0; font: 500 20px/1.4 "IBM Plex Mono"; letter-spacing: .12em; text-transform: uppercase; color: #a9b6c6; }
+  .s b { color: #05070b; background: #7fe3ff; padding: 3px 8px; font-weight: 500; margin-right: 14px; }
+</style></head>
+<body><div class="card"><div class="t"><span class="a">Callisto</span><span class="b">Down</span></div>
+<p class="s"><b>In development</b>Survive · Build · Melt through the ice · Dive</p></div></body></html>

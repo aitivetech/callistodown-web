@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Callisto Down · Survive, build and dive under the ice of Jupiter's moon</title>
+<meta name="description" content="Callisto Down is a survival and building game on Jupiter's moon Callisto, with everything physically simulated. Build a base, melt through a kilometre of ice and take a submarine down through ten strange biomes. In development for Windows and Linux.">
+<meta name="theme-color" content="#05070b">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://aitivetech.github.io/callisto-down/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Callisto Down">
+<meta property="og:title" content="Callisto Down">
+<meta property="og:description" content="Survival and building on Jupiter's moon Callisto, everything physically simulated. Melt through a kilometre of ice, then dive through ten biomes of a hidden ocean.">
+<meta property="og:url" content="https://aitivetech.github.io/callisto-down/">
+<meta property="og:image" content="https://aitivetech.github.io/callisto-down/img/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jupiter, banded and huge, rising over a frost-capped hill on Callisto against a black sky. In-game screenshot.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Callisto Down">
+<meta name="twitter:description" content="Survival and building on Callisto, everything physically simulated. Melt through the ice, dive through ten biomes.">
+<meta name="twitter:image" content="https://aitivetech.github.io/callisto-down/img/og-share.jpg">
+<meta name="twitter:image:alt" content="Jupiter rising over a frost-capped hill on Callisto. In-game screenshot.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="img/surface-low-sun-1920.webp" imagesrcset="img/surface-low-sun-960.webp 960w, img/surface-low-sun-1920.webp 1920w, img/surface-low-sun-2560.webp 2560w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+<script src="config.js" defer></script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <a class="nav-mark" href="#top" aria-label="Callisto Down, back to top">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><use href="#mark"/></svg>
+    <span>Callisto Down</span>
+  </a>
+  <nav aria-label="Sections">
+    <ul>
+      <li><a href="#game">The game</a></li>
+      <li><a href="#ocean">Ocean Stack</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#status">Status</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-small" href="#download">Download</a>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="title">
+  <picture class="hero-img">
+    <img src="img/surface-low-sun-1920.webp"
+         srcset="img/surface-low-sun-960.webp 960w, img/surface-low-sun-1920.webp 1920w, img/surface-low-sun-2560.webp 2560w"
+         sizes="100vw" width="1920" height="1080" fetchpriority="high" decoding="async"
+         alt="Low sun over the cratered plain of Callisto: a small, hard star in a black sky, long shadows across dark ground and bright frost.">
+  </picture>
+  <div class="hero-inner">
+    <p class="eyebrow"><span class="tag-dev">In development</span> Jupiter IV · 5.2 AU · 1.236 m/s²</p>
+    <h1 id="title" class="wordmark">
+      <span class="wm-a">Callisto</span>
+      <span class="wm-b">Down</span>
+    </h1>
+    <p class="hero-lede">Survive on Callisto, Jupiter's frozen moon. Build a base, melt through a kilometre of ice and take a submarine into the ocean beneath. <strong>Everything is physically simulated.</strong></p>
+    <div class="hero-cta">
+      <a class="btn" href="#download">Get the launcher</a>
+      <a class="btn btn-ghost" href="#ocean">See the descent</a>
+    </div>
+    <p class="hero-platforms">Windows · Linux · macOS later</p>
+  </div>
+  <a class="hero-depth" href="#game" aria-label="Scroll to the game">
+    <span>0 m</span><i aria-hidden="true"></i><span>−6000 m</span>
+  </a>
+</section>
+
+<!-- PITCH -->
+<section class="pitch" id="game" aria-labelledby="pitch-h">
+  <div class="wrap">
+    <p class="kicker">The game</p>
+    <h2 id="pitch-h" class="pitch-h">A survival game where <em>the physics is the game</em>.</h2>
+    <div class="pitch-body">
+      <p>Callisto Down is survival and building on Callisto, the most heavily cratered surface in the solar system. Air, heat, water and power are things you build, and you can see them work. Structures carry loads, hold pressure, leak and collapse. Gravity, temperatures, the length of the day and the pressure of the water are Callisto's real numbers.</p>
+      <p>Build a base on the surface. Power a melt drill and bore through about a kilometre of ice. Ride the cage down, launch a submarine and explore a subglacial ocean stacked in ten biomes, each stranger than the last. Better tech takes you deeper.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Ice to melt through</dt><dd>≈ 1 km</dd></div>
+      <div><dt>Water below it</dt><dd>5 km</dd></div>
+      <div><dt>Ocean biomes</dt><dd>10</dd></div>
+      <div><dt>Pressure at the bottom</dt><dd>65 bar</dd></div>
+      <div><dt>One day, in Earth days</dt><dd>16.75</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" aria-label="Features">
+  <article class="feature">
+    <figure class="feature-img">
+      <img src="img/reactor-glow-960.webp" srcset="img/reactor-glow-960.webp 960w, img/reactor-glow-1920.webp 1920w"
+           sizes="(min-width: 960px) 58vw, 100vw" width="1920" height="1080" loading="lazy" decoding="async"
+           alt="A small fission reactor glowing beside the orange-and-white frame of the melt-drill rig, on pale frosted ground.">
+    </figure>
+    <div class="feature-text">
+      <p class="kicker">01 · Build</p>
+      <h3>A base that has to work</h3>
+      <p>Nothing keeps you alive by default. Sealed habitats track their pressure, oxygen, CO₂ and temperature. Heat leaks through the walls you chose. A compact reactor becomes the hearth of the base, and its radiation follows the shielding you put around it.</p>
+      <p>The sun is a weak star at 5.2 AU, and the night lasts eight Earth days. Prepare for it, or freeze.</p>
+    </div>
+  </article>
+
+  <article class="feature feature-flip">
+    <figure class="feature-img">
+      <img src="img/plume-960.webp" srcset="img/plume-960.webp 960w, img/plume-1920.webp 1080w"
+           sizes="(min-width: 960px) 58vw, 100vw" width="1080" height="608" loading="lazy" decoding="async"
+           alt="A white vapour plume rising straight up from the melt drill's bore into the black sky over a cracked, frosted plain.">
+    </figure>
+    <div class="feature-text">
+      <p class="kicker">02 · Descend</p>
+      <h3>Melt through a kilometre of ice</h3>
+      <p>The melt-drill rig turns reactor power into a hot head that sinks through the ice shell. Meltwater is pumped up and vents at the collar as a plume that boils and freezes in vacuum. When the head breaks into the cavern below, a winch cage carries you down the shaft.</p>
+    </div>
+  </article>
+
+  <article class="feature">
+    <figure class="feature-img">
+      <img src="img/jupiter-rise-960.webp" srcset="img/jupiter-rise-960.webp 960w, img/jupiter-rise-1920.webp 1920w"
+           sizes="(min-width: 960px) 58vw, 100vw" width="1920" height="1080" loading="lazy" decoding="async"
+           alt="Jupiter, banded in cream and rust with its red spot, hanging above a frost-capped hill against a black sky.">
+    </figure>
+    <div class="feature-text">
+      <p class="kicker">03 · Navigate</p>
+      <h3>Jupiter never moves</h3>
+      <p>Callisto is tidally locked, so Jupiter hangs fixed in the sky, eight times the width of the full Moon. Its phases follow the local time, and through the long night its light shows you the land in grey. It is your landmark, your clock and your compass.</p>
+    </div>
+  </article>
+
+  <article class="feature feature-flip">
+    <figure class="feature-img">
+      <img src="img/b4-ember-960.webp" srcset="img/b4-ember-960.webp 960w, img/b4-ember-1920.webp 1920w"
+           sizes="(min-width: 960px) 58vw, 100vw" width="1920" height="1080" loading="lazy" decoding="async"
+           alt="Deep underwater: a submarine's twin floodlight beams cross a pale vent chimney, with an amber glow and rising sparks above it.">
+    </figure>
+    <div class="feature-text">
+      <p class="kicker">04 · See</p>
+      <h3>Ray-traced light, placed by hand</h3>
+      <p>Global illumination is ray traced. Light passes tinted through ice and glass, and water absorbs it the way the substance does: red dies within metres. Under the ice there is no sun and no sky. Every photon comes from your lamps, your floodlights, a vent or something alive.</p>
+    </div>
+  </article>
+
+  <div class="wrap">
+    <ul class="pillars">
+      <li>
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15"/><path d="M5 20h30M20 5v30M9.5 9.5l21 21"/></svg>
+        <h3>Real physics, real units</h3>
+        <p>Callisto's 1.236 m/s² for bodies, vehicles and you. Materials with real density, strength, conductivity and gas tightness. Water and air move between compartments under real pressure.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 14l14-8 14 8v12l-14 8-14-8z"/><path d="M6 14l14 8 14-8M20 22v12"/></svg>
+        <h3>Dig it, build it</h3>
+        <p>A voxel world at 25 cm resolution. Dig and cut with your tools, harvest what the ground is made of and build blocks and modules. Unsupported structures fall, and debris keeps its materials.</p>
+      </li>
+      <li>
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="13" cy="15" r="5"/><circle cx="27" cy="15" r="5"/><path d="M4 33c1-6 5-9 9-9s8 3 9 9M18 33c1-6 5-9 9-9s8 3 9 9"/></svg>
+        <h3>Co-op</h3>
+        <p>Play with friends on a listen server or a dedicated server. The simulation is server-authoritative: every player sees the same world, the same heat, the same water.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- OCEAN STACK -->
+<section class="ocean" id="ocean" aria-labelledby="ocean-h">
+  <div class="wrap ocean-head">
+    <p class="kicker">The Ocean Stack</p>
+    <h2 id="ocean-h">Ten bands down</h2>
+    <p class="ocean-lede">Under the ice lies a funnel of water five kilometres deep, its walls stepped in ten bands. Each one has its own place, its own physics and its own light. Your hull decides how far down you can go.</p>
+  </div>
+
+  <ol class="stack">
+    <li class="band" style="--c:#8fe9ff">
+      <div class="band-depth"><b>B1</b><span>0–150 m</span><span>≤ 2 bar</span></div>
+      <figure class="band-img"><img src="img/dome-ledge-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="An arrival dome under the ice: a ribbed ice roof over a dark water plain, the shore ledge lit by a lamp."></figure>
+      <div class="band-text">
+        <h3>The Rime Vault</h3>
+        <p>The arrival domes and the underside of the ice: marine-ice ceilings, brinicle forests and lamplight caught in platelet ice.</p>
+      </div>
+    </li>
+    <li class="band" style="--c:#c9eef5">
+      <div class="band-depth"><b>B2</b><span>150–450 m</span><span>≤ 6 bar</span></div>
+      <figure class="band-img"><img src="img/b2-snowfall-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="Blue water full of falling particles, white carbonate chimneys standing on a terrace, a submarine lit among them."></figure>
+      <div class="band-text">
+        <h3>The Snowfall Terraces</h3>
+        <p>Broad terraces under constant marine snow, with white carbonate chimney fields. Falling snow turns floodlights into solid beams.</p>
+      </div>
+    </li>
+    <li class="band" style="--c:#7fb8ff">
+      <div class="band-depth"><b>B3</b><span>450–800 m</span><span>≤ 10.5 bar</span></div>
+      <figure class="band-img"><img src="img/b3-mirror-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A submarine hovering over a round brine pool whose surface mirrors its lights."></figure>
+      <div class="band-text">
+        <h3>The Mirror Veils</h3>
+        <p>Sharp layers of brine that reflect like mirrors from below, internal waves rolling along them, and slow underwater brine falls.</p>
+      </div>
+    </li>
+    <li class="gate" style="--c:#ffcf5a"><span>Minnow limit · 10 bar</span></li>
+    <li class="band" style="--c:#ff9b45">
+      <div class="band-depth"><b>B4</b><span>800–1200 m</span><span>≤ 16 bar</span></div>
+      <figure class="band-img"><img src="img/b4-ember-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="Floodlight beams crossing a vent chimney under an amber glow and rising sparks."></figure>
+      <div class="band-text">
+        <h3>The Ember Vents</h3>
+        <p>Black smokers and sulfide mounds up to 600 K at the throats. Amber light, spark columns and heat shimmer. The first band where heat is free.</p>
+      </div>
+    </li>
+    <li class="band" style="--c:#b7ccff">
+      <div class="band-depth"><b>B5</b><span>1200–1700 m</span><span>≤ 22 bar</span></div>
+      <figure class="band-img"><img src="img/b5-clathrate-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A pale translucent wall of gas hydrate lit by floodlights, with bubble streams rising beside it."></figure>
+      <div class="band-text">
+        <h3>The Clathrate Galleries</h3>
+        <p>Walls and organ pipes of translucent gas hydrate, stable only at this pressure. Lamp heat makes it fizz into silver bubble streams.</p>
+      </div>
+    </li>
+    <li class="band" style="--c:#4fe3a6">
+      <div class="band-depth"><b>B6</b><span>1700–2300 m</span><span>≤ 30 bar</span></div>
+      <figure class="band-img"><img src="img/b6-lodestone-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="Dark magnetite reef ridges lined with glowing green and blue stripes."></figure>
+      <div class="band-text">
+        <h3>The Lodestone Reefs</h3>
+        <p>Magnetite reefs striped with glowing life along the field lines. The glow rises and falls with Jupiter's 10.2-hour sweep of the conductive ocean.</p>
+      </div>
+    </li>
+    <li class="gate" style="--c:#ffcf5a"><span>Narwhal limit · 30 bar</span></li>
+    <li class="band" style="--c:#a5f2e2">
+      <div class="band-depth"><b>B7</b><span>2300–3000 m</span><span>≤ 39 bar</span></div>
+      <figure class="band-img"><img src="img/b7-opal-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="Tall translucent sinter columns glowing from inside where a floodlight hits them."></figure>
+      <div class="band-text">
+        <h3>The Opal Cathedrals</h3>
+        <p>Columns and curtains of silica sinter hundreds of metres tall. The sinter pipes light: flood one column and it glows from within.</p>
+      </div>
+    </li>
+    <li class="band" style="--c:#6f7dff">
+      <div class="band-depth"><b>B8</b><span>3000–3700 m</span><span>≤ 48 bar</span></div>
+      <figure class="band-img"><img src="img/b8-hollow-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A submarine alone in black water, long ribbons of blue light drifting far behind it."></figure>
+      <div class="band-text">
+        <h3>The Hollow</h3>
+        <p>The funnel opens into a void. The walls are out of lamp range. Navigate by sonar, the depth gauge and memory, while walls of light drift past far away.</p>
+      </div>
+    </li>
+    <li class="band" style="--c:#9a8cff">
+      <div class="band-depth"><b>B9</b><span>3700–4400 m</span><span>≤ 58 bar</span></div>
+      <figure class="band-img"><img src="img/b9-lattice-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A floor of hexagonal columns seen from above, their joints glowing blue."></figure>
+      <div class="band-text">
+        <h3>The Lattice Floor</h3>
+        <p>The walls turn too regular: hexagonal columns, lattices in exact repeats, fractures that run straight. The water is warmer than it should be.</p>
+      </div>
+    </li>
+    <li class="gate" style="--c:#ffcf5a"><span>Deep-hull limit · 60 bar</span></li>
+    <li class="band band-last" style="--c:#f0dca0">
+      <div class="band-depth"><b>B10</b><span>4400–5000 m</span><span>≤ 65 bar</span></div>
+      <figure class="band-img"><img src="img/b10-root-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A submarine's lights falling on the dark floor at the bottom of the funnel."></figure>
+      <div class="band-text">
+        <h3>The Root Threshold</h3>
+        <p>The bottom of the funnel, about 800 m across. What waits here is still being designed.</p>
+      </div>
+    </li>
+  </ol>
+  <p class="wrap ocean-note">Depths are below the ice ceiling, pressures at each band's floor. Band names are working names. The ten bands are in the world now; their dangers come later.</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery" aria-labelledby="gallery-h">
+  <div class="wrap">
+    <p class="kicker">Gallery</p>
+    <h2 id="gallery-h">In-game screenshots</h2>
+    <p class="gallery-note">Every image on this page is an in-game screenshot from the current development build. Click one to see it large.</p>
+    <ul class="grid" id="grid">
+      <li class="g-wide"><a href="img/surface-into-sun-1920.webp" data-caption="Into the sun: a frosted crater floor at low sun."><img src="img/surface-into-sun-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="Looking into a low sun across a crater floor scattered with rocks and frost."></a></li>
+      <li><a href="img/rig-jupiter-1920.webp" data-caption="The melt-drill rig at dusk, work lamps lit, Jupiter above."><img src="img/rig-jupiter-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="The melt-drill rig at dusk with its work lamps lit and a small Jupiter high in the black sky."></a></li>
+      <li><a href="img/rig-low-sun-1920.webp" data-caption="The rig and its pad at low sun."><img src="img/rig-low-sun-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="The orange-and-black melt-drill rig on its pad, long shadows on glazed ground."></a></li>
+      <li><a href="img/jupiter-night-1920.webp" data-caption="Night on the flank of a knob, Jupiter fixed in the sky."><img src="img/jupiter-night-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A dim hill at night under a black sky with Jupiter small and bright above it."></a></li>
+      <li><a href="img/rig-slope-1920.webp" data-caption="The rig, reactor and radiator on the slope."><img src="img/rig-slope-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="The whole drill site on a frosted slope: rig, reactor and radiator, lamps glowing."></a></li>
+      <li class="g-wide"><a href="img/minnow-gardens-1920.webp" data-caption="The Minnow among glowing ice crystals."><img src="img/minnow-gardens-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="The small orange Minnow submarine head-on, its floodlights on, among glowing blue ice crystals."></a></li>
+      <li><a href="img/narwhal-reefs-1920.webp" data-caption="The Narwhal over the Lodestone Reefs (B6)."><img src="img/narwhal-reefs-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="The Narwhal submarine gliding over a reef lined with glowing blue and green stripes."></a></li>
+      <li><a href="img/dome-ledge-1920.webp" data-caption="An arrival dome under the ice, seen from the cage."><img src="img/dome-ledge-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A ribbed ice roof over a dark water plain, with a lamp-lit shore ledge."></a></li>
+      <li><a href="img/b8-hollow-1920.webp" data-caption="The Hollow (B8): the walls are out of lamp range."><img src="img/b8-hollow-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A submarine alone in black water with ribbons of blue light behind it."></a></li>
+      <li><a href="img/b3-mirror-1920.webp" data-caption="The Mirror Veils (B3): a brine pool."><img src="img/b3-mirror-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A submarine above a round brine pool that mirrors its lights."></a></li>
+      <li><a href="img/b5-clathrate-1920.webp" data-caption="The Clathrate Galleries (B5): translucent hydrate."><img src="img/b5-clathrate-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A translucent wall of gas hydrate lit by floodlights."></a></li>
+      <li><a href="img/b7-opal-1920.webp" data-caption="The Opal Cathedrals (B7): sinter that pipes light."><img src="img/b7-opal-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="Sinter columns glowing from inside where the floodlight hits them."></a></li>
+      <li><a href="img/b9-lattice-1920.webp" data-caption="The Lattice Floor (B9): hexagonal columns with glowing joints."><img src="img/b9-lattice-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="A floor of hexagonal columns seen from above, their joints glowing blue."></a></li>
+      <li><a href="img/b2-snowfall-1920.webp" data-caption="The Snowfall Terraces (B2): carbonate chimneys in marine snow."><img src="img/b2-snowfall-960.webp" width="960" height="540" loading="lazy" decoding="async" alt="White chimneys on a terrace in blue water full of falling particles, a submarine among them."></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- STATUS -->
+<section class="status" id="status" aria-labelledby="status-h">
+  <div class="wrap">
+    <p class="kicker">Development status</p>
+    <h2 id="status-h">In development</h2>
+    <p class="status-lede">Callisto Down is an early, playable work in progress, built on our own engine. There is no release date and no price yet. Builds are for following along and testing.</p>
+    <div class="status-cols">
+      <div class="status-card">
+        <h3><span class="dot dot-on" aria-hidden="true"></span>Playable now</h3>
+        <ul>
+          <li>The cratered surface around the start site, with Callisto's gravity, day, night and temperatures</li>
+          <li>Digging, harvesting, crafting, research and building</li>
+          <li>Habitats with air, heat and pressure; a reactor and power</li>
+          <li>The melt drill and the winch cage down to the ocean</li>
+          <li>The Minnow submarine in the upper ocean</li>
+          <li>All ten Ocean Stack bands in the world</li>
+          <li>Co-op on a listen or dedicated server</li>
+        </ul>
+      </div>
+      <div class="status-card">
+        <h3><span class="dot" aria-hidden="true"></span>Being worked on</h3>
+        <ul>
+          <li>Deeper hulls and deeper bases for the lower bands</li>
+          <li>The dangers of each band</li>
+          <li>Story and quests</li>
+          <li>Visual polish and lighting</li>
+          <li>macOS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="download" id="download" aria-labelledby="download-h">
+  <div class="wrap download-inner">
+    <div>
+      <p class="kicker">Download</p>
+      <h2 id="download-h">Get the launcher</h2>
+      <p>The launcher installs Callisto Down and keeps it up to date. These are development builds: expect bugs, missing pieces and changes, and worlds from older builds may not carry over.</p>
+    </div>
+    <div class="dl-buttons">
+      <a class="dl" data-download="windows" href="https://github.com/aitivetech/callisto-down/releases/latest">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zM11.5 4.4L21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.4z"/></svg>
+        <span><b>Windows</b><small>64-bit · installer</small></span>
+      </a>
+      <a class="dl" data-download="linux" href="https://github.com/aitivetech/callisto-down/releases/latest">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c-2.3 0-3.6 1.9-3.6 4.4 0 1.5.3 2.4-.8 4-1.2 1.7-2.6 3.6-2.6 6 0 .6.1 1.1.3 1.6-.6.4-1.3.9-1.3 1.6 0 1 1.6 1.3 3.3 1.6 1.2.2 2.2.8 3 .8.7 0 1.2-.4 1.7-.4s1 .4 1.7.4c.8 0 1.8-.6 3-.8 1.7-.3 3.3-.6 3.3-1.6 0-.7-.7-1.2-1.3-1.6.2-.5.3-1 .3-1.6 0-2.4-1.4-4.3-2.6-6-1.1-1.6-.8-2.5-.8-4 0-2.5-1.3-4.4-3.6-4.4z"/></svg>
+        <span><b>Linux</b><small>64-bit · AppImage</small></span>
+      </a>
+      <span class="dl dl-off" aria-disabled="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.9-3-.8C7 7.3 5.6 8.2 4.8 9.6c-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.7 2.4 2.9 2.4 1.2-.1 1.6-.8 3-.8s1.8.8 3 .8c1.3 0 2.1-1.2 2.8-2.3.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.6-1-2.6-3.9zM14.2 5.5c.6-.8 1.1-1.8 1-2.9-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.7-1.3z"/></svg>
+        <span><b>macOS</b><small>Coming later</small></span>
+      </span>
+    </div>
+    <details class="specs">
+      <summary>System requirements (proposed, will change)</summary>
+      <table>
+        <thead><tr><th scope="col"></th><th scope="col">Minimum · 1080p low</th><th scope="col">Recommended · 1080p high</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">GPU</th><td>RTX 2060 6 GB, RX 6600 8 GB or Arc A580</td><td>RTX 3070, RTX 4060 Ti, RX 7700 XT or Arc B580</td></tr>
+          <tr><th scope="row">CPU</th><td>4 cores / 8 threads, AVX2</td><td>6 cores / 12 threads</td></tr>
+          <tr><th scope="row">RAM</th><td>8 GB</td><td>16 GB</td></tr>
+          <tr><th scope="row">System</th><td colspan="2">64-bit Windows or Linux, a Vulkan 1.3 driver with hardware ray tracing (ray queries) and mesh shaders</td></tr>
+        </tbody>
+      </table>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <a class="nav-mark" href="#top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><use href="#mark"/></svg>
+      <span>Callisto Down</span>
+    </a>
+    <p>A game in development by <a href="https://github.com/aitivetech">aitivetech</a>, made with the Voxelity engine. All images are in-game screenshots.</p>
+    <p><a href="https://github.com/aitivetech/callisto-down">GitHub</a> · <a href="https://github.com/aitivetech/callisto-down/releases">Releases</a> · No cookies, no tracking.</p>
+    <p class="foot-copy">© <span id="year">2026</span> aitivetech</p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+  <figure>
+    <img id="lb-img" alt="">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+  <button class="lb-btn lb-close" type="button" aria-label="Close">×</button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Previous screenshot">‹</button>
+  <button class="lb-btn lb-next" type="button" aria-label="Next screenshot">›</button>
+</dialog>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M5 12.5h22M3.6 17.5h24.8" stroke="#e9a35a" stroke-width="2.2" fill="none"/>
+    <path d="M16 3v26" stroke="#7fe3ff" stroke-width="2" fill="none" stroke-dasharray="2.4 2.2"/>
+  </symbol>
+</svg>
+</body>
+</html>
