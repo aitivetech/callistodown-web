@@ -25,7 +25,7 @@ jobs:
       - name: Assemble the site
         run: |
           mkdir -p _site
-          cp -r index.html style.css main.js config.js favicon.svg favicon-32.png apple-touch-icon.png robots.txt CNAME .nojekyll img _site/
+          cp -r index.html style.css main.js config.js detect.js favicon.svg favicon-32.png apple-touch-icon.png robots.txt CNAME .nojekyll img _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
