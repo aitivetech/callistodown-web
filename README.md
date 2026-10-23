@@ -1,6 +1,6 @@
 # Callisto Down website
 
-The marketing site for **Callisto Down**, a survival and building game on Jupiter's moon Callisto (in development).
+The marketing site for **Callisto Down**, a survival and building game on Jupiter's moon Callisto (ultra early access, for gameplay testing). A game by Aitive Technologies GmbH using Voxelity Technology.
 Static HTML, CSS and a little JavaScript; no build step, no tracking, no cookies. Fonts come from Google Fonts
 (Big Shoulders Display, IBM Plex Sans, IBM Plex Mono).
 
