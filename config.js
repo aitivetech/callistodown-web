@@ -1,6 +1,9 @@
-// The one place for the download links. File names must match what the release workflow publishes
-// (see README.md, "Download links"). Without JavaScript the buttons fall back to the latest release page.
+// The one place for the downloads. File names must match what the release workflow uploads to the R2 bucket
+// behind download.callistodown.com (see README.md, "Downloads").
 window.CALLISTO_DOWNLOADS = {
-  windows: "https://github.com/aitivetech/callisto-down/releases/latest/download/CallistoDown-win-Setup.exe",
-  linux: "https://github.com/aitivetech/callisto-down/releases/latest/download/CallistoDown-linux.AppImage",
+  // false until the first public build is uploaded: the section says "First public test build coming soon"
+  // and the buttons are disabled. Set to true once both files below exist.
+  released: false,
+  windows: "https://download.callistodown.com/launcher/CallistoDown-win-x64-Setup.exe",
+  linux: "https://download.callistodown.com/launcher/CallistoDown-linux-x64.AppImage",
 };

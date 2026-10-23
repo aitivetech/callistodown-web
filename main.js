@@ -3,12 +3,20 @@
   const doc = document.documentElement;
   doc.classList.add("js");
 
-  // Download links
+  // Download links (config.js). Without JS the buttons only jump to #download.
   const dl = window.CALLISTO_DOWNLOADS || {};
+  const soon = document.getElementById("dl-soon");
   document.querySelectorAll("[data-download]").forEach((a) => {
     const url = dl[a.dataset.download];
-    if (url) a.href = url;
+    if (dl.released && url) {
+      a.href = url;
+    } else {
+      a.removeAttribute("href");
+      a.setAttribute("aria-disabled", "true");
+      a.classList.add("dl-off");
+    }
   });
+  if (soon) soon.hidden = !!dl.released;
 
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
