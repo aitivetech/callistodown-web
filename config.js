@@ -3,10 +3,13 @@
 window.CALLISTO_DOWNLOADS = {
   // false until the first public build is uploaded: the section says "First public test build coming soon" and
   // nothing can be downloaded. Set to true once the files of every available platform exist.
-  released: false,
+  released: true,
 
   // Channel preselected in the toggle: "stable" or "unstable".
-  defaultStability: "stable",
+  defaultStability: "unstable",
+
+  // Channels with builds on the server. A channel set to false cannot be picked ("coming later").
+  channels: { stable: false, unstable: true },
 
   // The five launcher RIDs. available: false shows the platform as "coming later" (not downloadable).
   platforms: {

@@ -98,7 +98,13 @@
 
     const soon = document.getElementById("dl-soon");
     if (soon) soon.hidden = !!cfg.released;
-    document.querySelectorAll('input[name="dl-channel"]').forEach((i) => { i.checked = i.value === stability; });
+    const channelOpen = (c) => !cfg.channels || cfg.channels[c] !== false;
+    if (!channelOpen(stability)) stability = stability === "stable" ? "unstable" : "stable";
+    document.querySelectorAll('input[name="dl-channel"]').forEach((i) => {
+      i.checked = i.value === stability;
+      i.disabled = !channelOpen(i.value);
+      i.closest("label").title = i.disabled ? "Coming later" : "";
+    });
 
     function render() {
       box.querySelectorAll("input").forEach((i) => {
